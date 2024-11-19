@@ -31,8 +31,15 @@
             } else{
                 document.write("비회원은 배송비 5000원이 부과됩니다.");
             }
+        }
+        if(pay >= 50000){
+            if(user){
+                document.write("배송비가 무료입니다.");
+            } else{
+                document.write("배송비가 5000원 부과됩니다.");
+            }
         }else {
-            document.write();
+            document.write("5만원 미만 구매시 배송비가 5000원 부과됩니다.");
         }
     </script>
 </body>
