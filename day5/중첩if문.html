@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩 if문</title>
+</head>
+
+<body>
+    <script>
+        // 조건문 안에 조건문이 있는 것을 중첩 if 문이라고 한다
+        /*
+        if(조건식 1번){
+            if(조건식 2번){
+                자바스크립트 코드
+            } else {
+                조건식 2의 조건이 맞지 않을 떄
+            }
+        } else {
+            조건식 1의 조건이 맞지 않을 떄
+        }
+        */
+
+        let userId = "yeonsu"
+        let userPw = "1122"
+
+        let inputId = prompt("아이디를 입력해주세요.");
+        let inputPw = prompt("비밀번호를 입력해주세요.");
+
+        if(userId == inputId){
+            if(userPw == inputPw){
+                document.write(userId + "님 반갑습니다.");
+            } else {
+                alert("입력하신 비밀번호가 일치하지 않습니다.");
+            }
+        } else {
+            alert("입력하신 아이디가 일치하지 않습니다.");
+        }
+    </script>
+</body>
+
+</html>

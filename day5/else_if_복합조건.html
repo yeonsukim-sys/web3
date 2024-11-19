@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>else_ if_복합조건</title>
+</head>
+<body>
+    <script>
+        // 사용자의 나이를 입력받는다.
+        /*
+        1. 사용자의 나이가 0보다 크고 7세 이하인 유아는 버스비는 800원입니다
+        2. 8세보다 이상이거나 19살 이하인 학생은 버스비는 1200원 입니다.
+        3. 스무살 이상이거나 34살 이하인 청년은 버스비는 1600원 입니다.
+        4. 35살 이상이거나 59살 이하인 중년은 버스비가 2000원 입니다.
+        5. 60살 이상이거나 120살 이하인 노년층은 무료입니다. 
+        6. 이 외에 나이를 입력한 경우 무언가 잘못되었다.. 사람 나이가 어떻게 (사용자에게 입력받은 값)살...?
+        */
+        // &&연산자와 else if 문을 사용하여 구현해보기!
+        
+        let age = prompt("당신의 나이는 몇살입니까?");
+
+        if(age >= 0 && age <= 7){
+            document.write("유아는 버스비가 800원 입니다.");
+        } else if(age >= 8 && age <= 19){
+            document.write("학생은 버스비가 1200원 입니다.");
+        } else if(age >= 20 && age <= 34){
+            document.write("청년은 버스비가 1600원 입니디.");
+        } else if(age >=35 && age <= 59){
+            document.write("중년은 버스비가 2000원 입니다.");
+        } else if(age >=60 && age <= 120){
+            document.write("노년층은 무료입니다");
+        } else if(age){
+            document.write("무언가 잘못 되었다.. 사람나이가 어떻게" + age + "살..?" );
+        }
+    </script>
+</body>
+</html>
