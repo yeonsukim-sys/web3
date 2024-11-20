@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배송비 구하기 풀이</title>
+</head>
+
+<body>
+    <script>
+        let totalPrice = prompt("구매금액입력", "숫자만 입력해주세요");
+        let member = confirm("회원이신가요?");
+
+        if (totalPrice >= 100000) {
+            document.write("10만원 이상 구매시 사은품이 증정됩니다.<br>");
+            if (member) {
+                document.write("회원 50,000원이상 구매 고객은 배송비 무료");
+            }
+            else {
+                document.write("비회원은 배송비 5000원이 부과됩니다.")
+            }
+        } else if(totalPrice >= 50000){
+            if(member){
+                document.write("회원 5만원 구매 고객은 배송비 무료");
+            }
+            else {
+                document.write("비회원은 배송비 5000원이 부과됩니다.");
+            }
+        } else {
+            document.write("50,000원 이하 구매 고객은 배송비 5,000원 이 부과됩니다.");
+        }
+    </script>
+</body>
+
+</html>

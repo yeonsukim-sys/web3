@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch문 계산기능</title>
+</head>
+<body>
+    <script>
+        // 1. 사용자에게 첫번쨰 숫자를 입력받음
+        // 2. 사용자에게 원하는 연산자를 입력받음(+ , - , / , * / &)
+        // 3. 사용자에게 두번째 숫자를 입력받음
+
+        // 문법시작
+        /*
+        사용자가 연산에 + 를 입력했다면 첫번째 숫자와 두번쨰 숫자를 더해서 출력함;
+        사용자가 연산에 - 를 입력했다면 첫번째 숫자와 두번쨰 숫자를 빼서  출력함;
+        사용자가 연산에 * 를 입력했다면 첫번째 숫자와 두번쨰 숫자를 곱해서 출력함;
+        사용자가 연산에 / 를 입력했다면 첫번째 숫자와 두번쨰 숫자를 나눠서 출력함; 이때 둘중 하나의 숫자가 0이 아닐때만
+        연산을 해야함, 만약 입력받으 숫자가 0이라면 "0으로 나눌 수 없습니다." 출력.
+        */
+
+        let num1 = prompt("첫번쨰 숫자를 입력하세요");
+        let data = prompt("원하는 연산방식을 입력하세요");
+        let num2 = prompt("두번쨰 숫자를 입력하세요.");
+
+       let math;
+       switch(data){
+        case "+": math = "num1 + num2";
+        case "-": math = num1 - num2;
+        case "*": math = num1 * num2;
+       }
+    </script>
+</body>
+</html>

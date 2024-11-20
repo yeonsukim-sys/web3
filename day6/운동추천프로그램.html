@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>운동추천프로그램</title>
+</head>
+<body>
+    <script>
+        // 사용자의 운동 난이도 입력받음 (높음 / 중간 /낮음)
+        // 사용자의 운동 유형 입력받음 ( 무산소 / 유산소)
+
+        let verSion = prompt("운동 난이도를 선택하세요 높음/중간/낮음");
+        let traiNing = prompt("무산소 / 유산소");
+
+        if(verSion ==="높음"){
+            if(traiNing === "무산소"){
+                document.write("고강도 무산소 운동 웨이트를 추천합니다");
+            } else if (traiNing === "유산소") {
+                document.write("고강도 유산소 운동인 마라톤 또는 수영을 추천합니다.");
+            } else {
+                document.write("유효하지 않은 운동 유형입니다.","무산소,유산소 중 택1 입력하세요.");
+            }
+        } else if(verSion === "중간"){
+            if(traiNing === "무산소"){
+                document.write("중간 강도의 무산소 운동인 맨몸스쿼트를 추천합니다.");
+            } else if(traiNing === "유산소"){
+                document.write("중간 강도 유산소 운동 자전거타기,빨리걷기 등을 추천합니다.");
+            } else {
+                document.write("유효하지 않은 운동 유형입니다.","무산소,유산소 중 택1 입력하세요.");
+            }
+        } else if(verSion === "낮음"){
+            if(traiNing === "무산소"){
+                document.write("저강도 무산소 운동인 가벼운 스트레칭 또는 1분 플랭크 도전 어때요?");
+            } else if(traiNing === "유산소"){
+                document.write("저강도 유산소 운동으로 천천히 걷기","또는 가벼운 요가를 추천할게요!");
+            } else {
+                document.write("유효하지 않은 운동 유형입니다.","무산소,유산소 중 택1 입력하세요.");
+            }
+        } else {
+            document.write("유효하지 않은 체력수준입니다.","높음,중간,낮음 중 택1 입력하세요.");
+        }
+    </script>
+</body>
+</html>
