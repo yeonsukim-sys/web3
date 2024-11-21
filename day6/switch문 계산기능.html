@@ -18,18 +18,38 @@
         사용자가 연산에 * 를 입력했다면 첫번째 숫자와 두번쨰 숫자를 곱해서 출력함;
         사용자가 연산에 / 를 입력했다면 첫번째 숫자와 두번쨰 숫자를 나눠서 출력함; 이때 둘중 하나의 숫자가 0이 아닐때만
         연산을 해야함, 만약 입력받으 숫자가 0이라면 "0으로 나눌 수 없습니다." 출력.
+
+        case "+" : document.write("결과 : $(num1 + num2)");
         */
 
-        let num1 = prompt("첫번쨰 숫자를 입력하세요");
-        let data = prompt("원하는 연산방식을 입력하세요");
-        let num2 = prompt("두번쨰 숫자를 입력하세요.");
+        let num1 = Number(prompt("첫번쨰 숫자를 입력하세요"));
+        let data = prompt("원하는 연산방식을 입력하세요","+, _ , *~");
+        let num2 = Number(prompt("두번쨰 숫자를 입력하세요."));
 
-       let math;
-       switch(data){
-        case "+": math = "num1 + num2";
-        case "-": math = num1 - num2;
-        case "*": math = num1 * num2;
-       }
+        console.log(typeof(num1));
+
+        switch(data){
+            case "+" : document.write('결과 : ${num1 + num2}');
+            break;
+
+            case "-" : document.write(num1 - num2);
+            break;
+
+            case "*" : document.write(num1 * num2);
+            break;
+
+            case "/" : if(num1===0 || num2 ===0){
+                document.write("0으로 나눌 수 없습니다.");
+            } else {
+                document.write(num1 / num2);
+            }
+            break;
+
+            case "%" : document.write(num1 % num2);
+            break;
+
+            default: document.write("유효하지 않은 연산자입니다.");
+        } 
     </script>
 </body>
 </html>

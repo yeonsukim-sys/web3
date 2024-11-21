@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while문 실습</title>
+    <style>
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // 숫자 20부터 10까지 하나씩 줄어들며 입력
+        // 짝수는 파란색, 홀수는 빨간색 글자로 출력할 것 "<p class = 'blue'></p>"
+
+        let i = 20;
+        while(i >= 10){
+            if(i % 2== 0){
+                document.write(`<p class = 'blue'>${i}</p>`);
+            } else {
+                document.write(`<p class = 'red'>${i}</p>`);
+            }
+            i--;
+        }
+    </script>
+
+    <p class="blue"></p>
+    <p class="red"></p>
+</body>
+</html>
