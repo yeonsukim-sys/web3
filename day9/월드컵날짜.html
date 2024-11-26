@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월드컵날짜</title>
+</head>
+<body>
+    <script>
+        let worldCup = new Date(2002,4,31);
+
+        let getFullYear = worldCup.getFullYear();
+            getMonth = worldCup.getMonth() + 1,
+            getDate = worldCup.getDate();
+            getDay = worldCup.getDay();
+
+            document.write("<h2>2002월드컵 날짜 정보</h2>");
+            document.write(`연 : ${getFullYear}<br>`);
+            document.write(`월 : ${getMonth}<br>`);
+            document.write(`일 : ${getDate}<br>`);
+            document.write(`요일 : ${getDay}<br>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜정보객체</title>
+</head>
+<body>
+    <script>
+        // 참조변수 = new Date();
+        // let todayDate = new Date();
+
+        
+        // 특정날짜 이론
+        // 참조 변수 = new Date("연-월-일");
+        // let stringDate = new Date("2002-05-31");
+        // e대부분의 브라우저는 2002년 5월 31일로 해석한다.
+        // 문자열 형식으로 작성하는 방법 (ISO 8601 표준권장) 안전함(숫자형으로 작성하는 것보다)
+         
+
+        // 숫자형식
+        // 참조변수 = new Date(연,월-1,일); 
+        // let numberDate = new Date(2002.4.31);
+        
+
+        // 날짜관련메서드()
+        /*
+        1. getFullYear() - 연도 정보를 가져옴
+        2. getMonth() - 월 정보를 가져옴 (+1)
+        3. getDate() - 일 정보를 가져옴
+        4. getDay() - 요일 정보를 가져옴
+        5. getHour() - 시간 정보를 가져옴
+        6. getMinute() - 분 정보를 가져옴
+        7. getSecond() - 초 정보를 가져옴
+        8. getTime() - 밀리초 정보를 가져옴
+
+        날짜 정보를 수정할때 > getFullYear -> setFullYear 로 변겯 
+        getDay()는 setDay()는 없음 왜냐하면 요일은 일을 바꾸면 날짜는 자동으로 바뀌기 떄문
+        */
+    </script>
+</body>
+</html>
