@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보!</title>
+</head>
+
+<body>
+    <script>
+        document.write("재미있는 가위바위보!");
+
+        let user = prompt("가위~바위~보!");
+        let rockScissorpaper;
+
+        let randomChoice = Math.ceil(Math.random() * 3);
+
+        if (randomChoice === 1) {
+            rockScissorpaper = "가위!"
+        } else if (randomChoice === 2) {
+            rockScissorpaper = "바위!"
+        } else if (randomChoice === 3) {
+            rockScissorpaper = "보!"
+        } else {
+            document.write("다시 내세요!");
+        }
+
+        // if (user === rockScissorpaper) {
+        //     document.write("비겼습니다!");
+        // } else if(
+        //     (user === "가위" && rockScissorpaper === "보") ||
+        //     (user === "바위" && rockScissorpaper === "가위") ||
+        //     (user === "보" && rockScissorpaper === "바위") ||
+        // )
+    </script>
+</body>
+
+</html>
