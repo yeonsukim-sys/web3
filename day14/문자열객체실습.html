@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열객체실습</title>
+</head>
+<body>
+    <script>
+        // 조건
+        /*
+        사용자의 여권 이름을 입력받는다.(영어로)
+        사용자가 입력한 영어 이름을 대문자로 변경한다.
+        사용자 이름 출력
+
+        사용자의 번호를 입력받는다.
+        사용자의 핸드폰 번호는 01000000000
+        마지막 4개를 ****로 표시할것
+        사용자 번호 출력
+        */
+
+        let passport = prompt("이름을 영문으로 입력하세요.(EN)");
+        document.write(passport.toUppercase());
+
+        let number = prompt("번호를 입력하세요");
+
+        let phoneNumber = number.substring(0,number.length -4) + "****"
+        document.write(phoneNumber);
+    </script>
+</body>
+</html>
