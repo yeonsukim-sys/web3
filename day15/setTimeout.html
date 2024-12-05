@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .section_01 {
+            background-color: violet;
+            height: 100vh;
+        }
+        .new_background {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <section class="section_01" id="section_01"></section>
+    <p></p>
+    <script>
+        // let setTimeoutCode = setTimeout(()=> {
+        //     document.write("안녕하세요");
+        // },3000);
+
+        let section = document.getElementById("section_01");
+        let backgroundChange = setTimeout(() => {
+            // section.style.background = "pink";
+            section.classList.add("new_background");
+        },3000);
+    </script>
+</body>
+</html>
